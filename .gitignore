@@ -1,0 +1,9 @@
+/.idea/*
+__pycache__
+/.idea/vcs.xml
+dist/
+django_staff_view.egg-info
+staff_view.egg-info
+/.coverage
+/db.sqlite3
+staticfiles/
