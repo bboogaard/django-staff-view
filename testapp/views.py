@@ -24,6 +24,6 @@ class QuickAddUserView(StaffView):
 
     title = _("Add user")
 
-    def form_valid(self, username, email):
-        user = User.objects.create_user(username, email)
+    def form_valid(self, form):
+        user = form.save()
         return redirect(reverse('admin:auth_user_change', args=[user.pk]))

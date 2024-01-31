@@ -36,12 +36,12 @@ class StaffView(TemplateView):
     def post(self, request, *args, **kwargs):
         form = self.get_form(request.POST, files=request.FILES)
         if form.is_valid():
-            return self.form_valid(**form.cleaned_data)
+            return self.form_valid(form)
 
         context = self.get_context_data(form=form)
         return self.render_to_response(context)
 
-    def form_valid(self, **data):
+    def form_valid(self, form):
         raise NotImplementedError()
 
     def get_context_data(self, **kwargs):
