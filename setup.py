@@ -3,7 +3,7 @@ from staff_view.version import Version
 
 
 setup(name='django-staff-view',
-     version=Version('1.0.0').number,
+     version=Version('1.0.1').number,
      description='Staff views for Django',
      long_description=open('README.md').read().strip(),
      long_description_content_type="text/markdown",

@@ -38,6 +38,6 @@ class MyView(StaffView):
 
     form_class = MyForm
 
-    def form_valid(self, username, email):
+    def form_valid(self, form):
         ...  # Return a response object
 ```
